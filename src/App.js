@@ -1,7 +1,9 @@
 import logo from './logo.svg'
 import './App.css'
+
 const { REACT_APP_LOGICAPP_URL } = process.env
-function App () {
+
+const App = () => {
   return (
     <div className='App'>
       <header className='App-header'>
@@ -17,8 +19,8 @@ function App () {
         >
           Learn React
         </a>
+        <p>{REACT_APP_LOGICAPP_URL}</p>
       </header>
-      <p>{REACT_APP_LOGICAPP_URL}</p>
     </div>
   )
 }
